@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/build.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RealEstate.</title>
+</head>
+<body class="bg-white">
+    <!-- Header Starts Here -->
+    <header class="w-full mb-16 border-b-[1px] border-gray-100">
+        <div class="flex items-center justify-between max-w-6xl mx-auto px-6 py-4">
+            <a href="index.html" class="text-2xl md:text-3xl font-semibold">RealEstate.</a>
+    
+            <div class="flex items-center">
+                <a href="#" target="_blank" class="text-green-400 text-base sm:text-lg">+11 22 33 44<span class="mx-1 text-xl text-yellow-500">•</span></a>
+                <a href="#" target="_blank" class="fa-solid text-red-400 fa-envelope mx-1 text-lg sm:text-xl"></a>
+                <a href="#" target="_blank" class="fa-brands text-purple-500 fa-instagram mx-1 text-lg sm:text-xl"></a>
+                <a href="#" target="_blank" class="fa-brands text-blue-700 fa-linkedin mx-1 text-lg sm:text-xl"></a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Hero Starts Here -->
+    <div class="block md:flex max-w-6xl mx-auto px-6 py-4 mb-16">
+        <section class="flex items-center w-full md:w-7/12 mb-4 md:mb-0">
+            <div class="">
+                <h2 class="mb-4 text-6xl"><span class="text-purple-500">Find</span> your dream house with me.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, explicabo! Odit odio doloribus incidunt neque fuga accusamus porro nihil numquam quo, maiores harum, amet consectetur, reiciendis architecto eos. Necessitatibus, voluptatem!</p>
+            </div>
+        </section>
+
+        <section class="w-full md:w-5/12">
+            <img src="https://media.architecturaldigest.com/photos/59f1e7eab56ff84bcaa873e7/master/w_4600,h_3067,c_limit/Oregon%20-%20Courtesy%20CIRE_Luxe%20Platinum%20Properties.jpg" alt="/" class="rounded-tl-[100px] rounded-br-[100px]">
+        </section>
+    </div>
+    <!-- Hero Ends Here -->
+
+    <!-- Main Starts Here -->
+    <main class="block md:flex max-w-6xl mx-auto mb-16">
+        <!-- Filter Starts Here -->
+        <form action="#" class="w-full h-max md:w-1/4 mb-4 md:mb-0 mr-0 md:mr-4 px-6 py-4 md:py-0">
+            <div class="mb-4">
+                <label for="property_type_id" class="block mb-2 text-blue-700">Property Type</label>
+                <select name="property_type_id" id="property_type_id" class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                    <option value="">-- Select --</option>
+                    <option value="">Apartment</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="city_id" class="block mb-2 text-blue-700">City</label>
+                <select name="city_id" id="city_id" class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                    <option value="">-- Select --</option>
+                    <option value="">Ankara</option>
+                    <option value="">İstanbul</option>
+                    <option value="">İzmir</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="number_of_rooms_id" class="block mb-2 text-blue-700">Number of Rooms</label>
+                <select name="number_of_rooms_id" id="number_of_rooms_id" class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                    <option value="">-- Select --</option>
+                    <option value="">1 + 1</option>
+                    <option value="">2 + 1</option>
+                    <option value="">3 + 1</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="district" class="block mb-2 text-blue-700">District</label>
+                <input type="text" name="district" id="price_range_start" class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+            </div>
+
+            <div class="mb-4">
+                <label for="price_range_start" class="block mb-2 text-blue-700">Price Range</label>
+                <div class="flex justify-between items-center w-full">
+                    <input type="text" name="price_range_start" id="price_range_start" class="block w-5/12 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="0">
+                    <span>-</span>
+                    <input type="text" name="price_range_end" id="price_range_start" class="block w-5/12 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="9999999">
+                </div>
+            </div>
+
+            <button type="button" class="bg-blue-400 text-white hover:bg-blue-500 focus:bg-blue-500 active:bg-blue-600 inline-block px-4 py-2.5 font-medium text-xs leading-tight rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">Filter</button>
+        </form>
+        <!-- Filter Ends Here -->
+
+        <!-- Contents Starts Here -->
+        <section class="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-4 px-6 md:pl-0 py-4 md:py-0">
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/01/11172338/World%E2%80%99s-15-Most-Beautiful-Houses-That-Will-Leave-You-Awestruck-featured-shutterstock_1182743467-1200x700-compressed.jpg" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">Ankara</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Yenimahalle</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Çankaya Prime Oran Premium Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>4</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>2</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>175m2</span>
+                    </div>
+                </div>
+
+                <p class="font-semibold text-purple-500">₺ 1975000</p>
+            </a>
+
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/01/11171226/World%E2%80%99s-15-Most-Beautiful-Houses-That-Will-Leave-You-Awestruck-02.png" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">İstanbul</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Şişli</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Gölbaşı Natura İncek Premium Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>5</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>1</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>220m2</span>
+                    </div>
+                </div>
+                
+                <p class="font-semibold text-purple-500">₺ 2225000</p>
+            </a>
+
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/01/10145854/most-beautiful-houses2.png" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">İzmir</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Bornova</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Etimesgut Frekans Eryaman Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>2</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>1</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>158m2</span>
+                    </div>
+                </div>
+                
+                <p class="font-semibold text-purple-500">₺ 1108000</p>
+            </a>
+
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://www.homestratosphere.com/wp-content/uploads/2020/07/pretty-houses-july092020.jpg" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">Çorum</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Alaca</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Keçiören Gamador Medyan Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>7</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>4</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>300m2</span>
+                    </div>
+                </div>
+                
+                <p class="font-semibold text-purple-500">₺ 3000000</p>
+            </a>
+
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://www.fancypantshomes.com/wp-content/uploads/2018/11/house-porn-homes-reddit-favorite-e1543461563739.jpg" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">Ankara</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Gölbaşı</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Gölbaşı Natura Ovacık Elite Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>4</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>1</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>350m2</span>
+                    </div>
+                </div>
+                
+                <p class="font-semibold text-purple-500">₺ 2800000</p>
+            </a>
+
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://i.ytimg.com/vi/zumJJUL_ruM/maxresdefault.jpg" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">Yalova</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Armutlu</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Beytepe Villa Monza Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>5</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>2</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>550m2</span>
+                    </div>
+                </div>
+                
+                <p class="font-semibold text-purple-500">₺ 2288000</p>
+            </a>
+
+            <a href="details.html" target="_blank" class="p-2 shadow-md hover:scale-105 duration-300">
+                <img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/05/Victorian-house-in-Cleveland-60f624c056d86-62824be0ad08d__700.jpg" alt="/" class="w-full h-48 mb-1 object-cover">
+
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">İzmir</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Bornova</span>
+                </div>
+
+                <p class="mb-2 font-bold text-sm">Yenimahalle Akadia İncek Houses</p>
+
+                <div class="flex mb-2">
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bed"></i>
+                        <span>5</span>
+                    </div>
+
+                    <div class="mr-3 text-gray-500 text-xs">
+                        <i class="fa-solid fa-bath"></i>
+                        <span>2</span>
+                    </div>
+
+                    <div class="text-gray-500 text-xs">
+                        <i class="fa-solid fa-maximize"></i>
+                        <span>268m2</span>
+                    </div>
+                </div>
+                
+                <p class="font-semibold text-purple-500">₺ 3228000</p>
+            </a>
+        </section>
+        <!-- Contents Ends Here -->
+    </main>
+    <!-- Main Ends Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="w-full p-4 bg-black text-center">
+        <p class="text-white text-sx md:text-sm">Copyright &#169; 2022. All rights reserved.</p>
+    </footer>
+    <!-- Footer Ends Here -->
+</body>
+</html>

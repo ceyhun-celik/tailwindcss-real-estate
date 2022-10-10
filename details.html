@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/build.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Starts Here -->
+    <header class="w-full mb-16 border-b-[1px] border-gray-100">
+        <div class="flex items-center justify-between max-w-6xl mx-auto px-6 py-4">
+            <a href="index.html" class="text-2xl md:text-3xl font-semibold">RealEstate.</a>
+    
+            <div class="flex items-center">
+                <a href="#" target="_blank" class="text-green-400 text-base sm:text-lg">+11 22 33 44<span class="mx-1 text-xl text-yellow-500">•</span></a>
+                <a href="#" target="_blank" class="fa-solid text-red-400 fa-envelope mx-1 text-lg sm:text-xl"></a>
+                <a href="#" target="_blank" class="fa-brands text-purple-500 fa-instagram mx-1 text-lg sm:text-xl"></a>
+                <a href="#" target="_blank" class="fa-brands text-blue-700 fa-linkedin mx-1 text-lg sm:text-xl"></a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+
+    <!-- Main Starts Here -->
+    <main class="max-w-6xl mx-auto p-4 mb-16">
+        <div class="block md:flex justify-between mb-4">
+            <div class="mb-4 md:mb-0">
+                <div class="flex flex-wrap w-full mb-1">
+                    <span class="bg-green-500 text-white p-1 rounded-lg text-xs m-1">Apartment</span>
+                    <span class="bg-blue-500 text-white p-1 rounded-lg text-xs m-1">Çorum</span>
+                    <span class="bg-yellow-500 text-white p-1 rounded-lg text-xs m-1">Alaca</span>
+                </div>
+
+                <h2 class="mb-1 font-semibold text-2xl md:text-3xl">Çankaya Prime Oran Premium Houses</h2>
+                <p class="text-sm text-gray-500">Beştepe, Dumlupınar Blv. No:6, 06560 Yenimahalle/Ankara</p>
+            </div>
+
+            <div class="flex items-end justify-end">
+                <p class="text-base md:text-lg font-semibold text-purple-500 whitespace-none">₺ 1975000</p>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/01/11172338/World%E2%80%99s-15-Most-Beautiful-Houses-That-Will-Leave-You-Awestruck-featured-shutterstock_1182743467-1200x700-compressed.jpg" alt="/" class="w-full h-96 object-contain" id="portrait">
+        </div>
+
+        <div class="flex mb-4 text-purple-500 text-sm md:text-base">
+            <div class="mr-3">
+                <i class="fa-solid fa-bed"></i>
+                <span>7</span>
+            </div>
+
+            <div class="mr-3">
+                <i class="fa-solid fa-bath"></i>
+                <span>4</span>
+            </div>
+
+            <div class="">
+                <i class="fa-solid fa-maximize"></i>
+                <span>300m2</span>
+            </div>
+        </div>
+
+        <div class="mb-4 flex flex-wrap">
+            <img src="https://www.fancypantshomes.com/wp-content/uploads/2018/11/house-porn-homes-reddit-favorite-e1543461563739.jpg" alt="/" class="w-16 h-16 mr-1 object-cover hover:border-2 hover:border-orange-500" onclick="changePortrait(this)">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/01/11171226/World%E2%80%99s-15-Most-Beautiful-Houses-That-Will-Leave-You-Awestruck-02.png" alt="/" class="w-16 h-16 mr-1 object-cover hover:border-2 hover:border-orange-500" onclick="changePortrait(this)">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/01/10145854/most-beautiful-houses2.png" alt="/" class="w-16 h-16 mr-1 object-cover hover:border-2 hover:border-orange-500" onclick="changePortrait(this)">
+            <img src="https://www.homestratosphere.com/wp-content/uploads/2020/07/pretty-houses-july092020.jpg" alt="/" class="w-16 h-16 mr-1 object-cover hover:border-2 hover:border-orange-500" onclick="changePortrait(this)">
+            <img src="https://i.ytimg.com/vi/zumJJUL_ruM/maxresdefault.jpg" alt="/" class="w-16 h-16 mr-1 object-cover hover:border-2 hover:border-orange-500" onclick="changePortrait(this)">
+            <img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/05/Victorian-house-in-Cleveland-60f624c056d86-62824be0ad08d__700.jpg" alt="/" class="w-16 h-16 mr-1 object-cover hover:border-2 hover:border-orange-500" onclick="changePortrait(this)">
+        </div>
+
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam consequuntur esse rerum nostrum obcaecati qui mollitia, magni maiores enim! Ut doloremque quis quasi recusandae. Ratione quae amet fugiat modi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet in nostrum blanditiis neque tempora numquam labore velit iste? Et explicabo ea ad deserunt nesciunt natus nam at sunt eveniet?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam consequuntur esse rerum nostrum obcaecati qui mollitia, magni maiores enim! Ut doloremque quis quasi recusandae. Ratione quae amet fugiat modi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit amet in nostrum blanditiis neque tempora numquam labore velit iste? Et explicabo ea ad deserunt nesciunt natus nam at sunt eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ut expedita doloremque in, dolores iure a repellendus aliquam voluptas tempore suscipit voluptatum. Porro esse, odit repellendus voluptas accusantium sit recusandae!</p>
+    </main>
+    <!-- Main Ends Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="w-full p-4 bg-black text-center">
+        <p class="text-white text-sx md:text-sm">Copyright &#169; 2022. All rights reserved.</p>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script>
+        function changePortrait(element){
+            portrait.src = element.src
+        }
+    </script>
+</body>
+</html>
